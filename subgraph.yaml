@@ -6,10 +6,10 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: EIP721
-    network: mainnet
+    network: moonbeam
     source:
       abi: EIP721
-      startBlock: 5806610
+      startBlock: 0
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
