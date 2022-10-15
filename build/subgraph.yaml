@@ -1,4 +1,4 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 description: EIP-721
 repository: https://github.com/wighawag/eip721-subgraph
 schema:
@@ -6,13 +6,13 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: EIP721
-    network: mainnet
+    network: moonbeam
     source:
       abi: EIP721
-      startBlock: 5806610
+      startBlock: 0
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Token
